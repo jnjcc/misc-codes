@@ -50,8 +50,19 @@
 ; Your goal is to write the score method.
 
 (defun score (dice)
-  ; You need to write this method
-)
+  (let* ((ndice 7) ; do not use the 0-th elem
+         (score 0)
+         (cnts (make-list ndice :initial-element 0)))
+    (mapcar (lambda (elem)
+              (incf (nth elem cnts)))
+            dice)
+    (dotimes (elem ndice score)
+      (multiple-value-bind (div rem)
+          (floor (nth elem cnts) 3)
+        (cond
+          ((= elem 1) (incf score (+ (* 1000 div) (* 100 rem))))
+          ((= elem 5) (incf score (+ (* 500  div) (* 50  rem))))
+          (t (incf score (* 100 elem div))))))))
 
 (define-test test-score-of-an-empty-list-is-zero
     (assert-equal 0 (score nil)))
