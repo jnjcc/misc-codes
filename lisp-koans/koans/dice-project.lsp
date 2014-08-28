@@ -22,15 +22,18 @@
 
 ;;  YOU WRITE THIS PART:
 (defclass dice-set ()
-  () ;; WRITE DICE-SET CLASS BODY HERE
+  ((dlist :writer set-dlist)) ;; WRITE DICE-SET CLASS BODY HERE
 )
 
 (defmethod get-values ((object dice-set))
-  ;; WRITE GET-VALUES METHOD DEFINITION HERE
+  (slot-value object 'dlist) ;; WRITE GET-VALUES METHOD DEFINITION HERE
 )
 
 (defmethod roll (how-many (object dice-set))
-  ;; WRITE ROLL METHOD DEFINITION HERE
+  (set-dlist (mapcar (lambda (x)
+                       (+ (random x) 1))
+                     (make-list how-many :initial-element 6))
+             object)
 )
 
 
