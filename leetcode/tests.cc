@@ -44,3 +44,8 @@ TEST(AddTwoNumbers, list) {
   EXPECT_EQ(ret->next->val, 0);
   EXPECT_EQ(ret->next->next->val, 8);
 }
+
+TEST(LongestPalindromeNaive, navie) {
+  EXPECT_EQ(LongestPalindromeNaive("bb"), "bb");
+  EXPECT_EQ(LongestPalindromeNaive("ccc"), "ccc");
+}

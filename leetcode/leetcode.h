@@ -21,4 +21,6 @@ struct ListNode {
 };
 ListNode *AddTwoNumbers(ListNode *lhs, ListNode *rhs);
 
+string LongestPalindromeNaive(const string &text);
+
 #endif  // LEETCODE_H_
