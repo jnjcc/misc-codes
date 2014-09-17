@@ -27,3 +27,9 @@ TEST(FindMedianSortedArrays, kth) {
   int B2[] = {1001};
   EXPECT_EQ(FindMedianSortedArrays(A2, 1, B2, 1), 1000.5);
 }
+
+TEST(LengthOfLongestSubstring, map) {
+  string s1 = "abcabcbb", s2 = "bbbbb";
+  EXPECT_EQ(LengthOfLongestSubstring(s1), 3);
+  EXPECT_EQ(LengthOfLongestSubstring(s2), 1);
+}
