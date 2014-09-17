@@ -14,4 +14,11 @@ double FindMedianSortedArrays(int A[], int m, int B[], int n);
 
 int LengthOfLongestSubstring(string s);
 
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode(int x): val(x), next(NULL) {}
+};
+ListNode *AddTwoNumbers(ListNode *lhs, ListNode *rhs);
+
 #endif  // LEETCODE_H_

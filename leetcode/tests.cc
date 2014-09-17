@@ -33,3 +33,14 @@ TEST(LengthOfLongestSubstring, map) {
   EXPECT_EQ(LengthOfLongestSubstring(s1), 3);
   EXPECT_EQ(LengthOfLongestSubstring(s2), 1);
 }
+
+TEST(AddTwoNumbers, list) {
+  ListNode *l1 = new ListNode(2), *l2 = new ListNode(4), *l3 = new ListNode(3);
+  ListNode *r1 = new ListNode(5), *r2 = new ListNode(6), *r3 = new ListNode(4);
+  l1->next = l2; l2->next = l3;
+  r1->next = r2; r2->next = r3;
+  ListNode *ret = AddTwoNumbers(l1, r1);
+  EXPECT_EQ(ret->val, 7);
+  EXPECT_EQ(ret->next->val, 0);
+  EXPECT_EQ(ret->next->next->val, 8);
+}
