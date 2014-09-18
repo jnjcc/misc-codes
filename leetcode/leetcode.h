@@ -26,4 +26,6 @@ ListNode *AddTwoNumbers(ListNode *lhs, ListNode *rhs);
 string LongestPalindromeNaive(const string &text);
 string LongestPalindrome(const string &text);
 
+string ZigZagConvert(const string &s, int rows);
+
 #endif  // LEETCODE_H_

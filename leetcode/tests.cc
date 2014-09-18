@@ -55,3 +55,9 @@ TEST(LongestPalindrome, Manacher) {
   EXPECT_EQ(LongestPalindrome("ccc"), "ccc");
   EXPECT_EQ(LongestPalindrome("babcbabcbaccba"), "abcbabcba");
 }
+
+TEST(ZigZagConvert, convert) {
+  string ret = ZigZagConvert("PAYPALISHIRING", 3);
+  string ret2 = ZigZagConvert("A", 1);
+  EXPECT_EQ(ZigZagConvert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
+}
