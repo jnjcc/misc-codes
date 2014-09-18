@@ -49,3 +49,9 @@ TEST(LongestPalindromeNaive, navie) {
   EXPECT_EQ(LongestPalindromeNaive("bb"), "bb");
   EXPECT_EQ(LongestPalindromeNaive("ccc"), "ccc");
 }
+
+TEST(LongestPalindrome, Manacher) {
+  EXPECT_EQ(LongestPalindrome("bb"), "bb");
+  EXPECT_EQ(LongestPalindrome("ccc"), "ccc");
+  EXPECT_EQ(LongestPalindrome("babcbabcbaccba"), "abcbabcba");
+}

@@ -1,6 +1,8 @@
 #ifndef LEETCODE_H_
 #define LEETCODE_H_
 
+#include <stdio.h>
+
 #include <algorithm>
 #include <string>
 #include <vector>
@@ -22,5 +24,6 @@ struct ListNode {
 ListNode *AddTwoNumbers(ListNode *lhs, ListNode *rhs);
 
 string LongestPalindromeNaive(const string &text);
+string LongestPalindrome(const string &text);
 
 #endif  // LEETCODE_H_
