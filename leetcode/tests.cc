@@ -67,3 +67,9 @@ TEST(Reverse, int) {
   EXPECT_EQ(Reverse(-123), -321);
   EXPECT_EQ(Reverse(1100), 11);
 }
+
+TEST(Atoi, int) {
+  EXPECT_EQ(Atoi("+123"), 123);
+  EXPECT_EQ(Atoi("-023"), -23);
+  EXPECT_EQ(Atoi("2147483648"), 2147483647);
+}

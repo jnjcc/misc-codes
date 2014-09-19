@@ -30,4 +30,6 @@ string ZigZagConvert(const string &s, int rows);
 
 int Reverse(int x);
 
+int Atoi(const char *str);
+
 #endif  // LEETCODE_H_
