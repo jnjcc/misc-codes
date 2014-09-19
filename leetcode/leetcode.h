@@ -28,4 +28,6 @@ string LongestPalindrome(const string &text);
 
 string ZigZagConvert(const string &s, int rows);
 
+int Reverse(int x);
+
 #endif  // LEETCODE_H_

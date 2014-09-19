@@ -61,3 +61,9 @@ TEST(ZigZagConvert, convert) {
   string ret2 = ZigZagConvert("A", 1);
   EXPECT_EQ(ZigZagConvert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
 }
+
+TEST(Reverse, int) {
+  EXPECT_EQ(Reverse(123), 321);
+  EXPECT_EQ(Reverse(-123), -321);
+  EXPECT_EQ(Reverse(1100), 11);
+}
