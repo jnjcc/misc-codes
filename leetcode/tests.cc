@@ -73,3 +73,9 @@ TEST(Atoi, int) {
   EXPECT_EQ(Atoi("-023"), -23);
   EXPECT_EQ(Atoi("2147483648"), 2147483647);
 }
+
+TEST(IsPalindrome, int) {
+  EXPECT_EQ(IsPalindrome(121), true);
+  EXPECT_EQ(IsPalindrome(-121), false);
+  EXPECT_EQ(IsPalindrome(12), false);
+}

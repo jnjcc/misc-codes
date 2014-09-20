@@ -2,6 +2,7 @@
 #define LEETCODE_H_
 
 #include <stdio.h>
+#include <math.h>
 
 #include <algorithm>
 #include <string>
@@ -31,5 +32,7 @@ string ZigZagConvert(const string &s, int rows);
 int Reverse(int x);
 
 int Atoi(const char *str);
+
+bool IsPalindrome(int x);
 
 #endif  // LEETCODE_H_
