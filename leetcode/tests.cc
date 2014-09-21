@@ -79,3 +79,9 @@ TEST(IsPalindrome, int) {
   EXPECT_EQ(IsPalindrome(-121), false);
   EXPECT_EQ(IsPalindrome(12), false);
 }
+
+TEST(IsMatch, recursive) {
+  EXPECT_EQ(IsMatch("aab", "c*a*b"), true);
+  EXPECT_EQ(IsMatch("b", ""), false);
+  EXPECT_EQ(IsMatch("b", ".*"), true);
+}

@@ -35,4 +35,6 @@ int Atoi(const char *str);
 
 bool IsPalindrome(int x);
 
+bool IsMatch(const char *s, const char *p);
+
 #endif  // LEETCODE_H_
