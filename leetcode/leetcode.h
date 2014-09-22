@@ -39,4 +39,6 @@ bool IsMatch(const char *s, const char *p);
 
 int MaxArea(const vector<int> &height);
 
+string IntToRoman(int num);
+
 #endif  // LEETCODE_H_

@@ -85,3 +85,7 @@ TEST(IsMatch, recursive) {
   EXPECT_EQ(IsMatch("b", ""), false);
   EXPECT_EQ(IsMatch("b", ".*"), true);
 }
+
+TEST(IntToRoman, int) {
+  EXPECT_EQ(IntToRoman(99), "XCIX");
+}
