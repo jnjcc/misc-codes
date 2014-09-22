@@ -37,4 +37,6 @@ bool IsPalindrome(int x);
 
 bool IsMatch(const char *s, const char *p);
 
+int MaxArea(const vector<int> &height);
+
 #endif  // LEETCODE_H_
