@@ -89,3 +89,7 @@ TEST(IsMatch, recursive) {
 TEST(IntToRoman, int) {
   EXPECT_EQ(IntToRoman(99), "XCIX");
 }
+
+TEST(RomanToInt, string) {
+  EXPECT_EQ(RomanToInt("XCIX"), 99);
+}
