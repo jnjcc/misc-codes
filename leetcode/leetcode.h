@@ -42,4 +42,6 @@ int MaxArea(const vector<int> &height);
 string IntToRoman(int num);
 int RomanToInt(const string &s);
 
+vector<vector<int> > ThreeSum(vector<int> &num);
+
 #endif  // LEETCODE_H_

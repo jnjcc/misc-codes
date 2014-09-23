@@ -93,3 +93,11 @@ TEST(IntToRoman, int) {
 TEST(RomanToInt, string) {
   EXPECT_EQ(RomanToInt("XCIX"), 99);
 }
+
+TEST(ThreeSum, vector) {
+  int array[] = {-1, 0, 1, 2, -1, -4};
+  vector<int> num(array, array + sizeof(array) / sizeof(array[0]));
+  vector<vector<int> > ret = ThreeSum(num);
+  // <-1, 0, 1> & <-1, -1, 2>
+  EXPECT_EQ(ret.size(), 2);
+}
