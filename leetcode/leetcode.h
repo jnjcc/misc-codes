@@ -44,4 +44,6 @@ int RomanToInt(const string &s);
 
 vector<vector<int> > ThreeSum(vector<int> &num);
 
+int ThreeSumClosest(vector<int> &sum, int target);
+
 #endif  // LEETCODE_H_

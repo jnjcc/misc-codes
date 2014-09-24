@@ -101,3 +101,14 @@ TEST(ThreeSum, vector) {
   // <-1, 0, 1> & <-1, -1, 2>
   EXPECT_EQ(ret.size(), 2);
 }
+
+TEST(ThreeSumClosest, vector) {
+  int a1[] = {-1, 0, 1, 2, -1, -4};
+  int a2[] = {-1, 2, 1, -4};
+  vector<int> num1(a1, a1 + sizeof(a1) / sizeof(a1[0]));
+  vector<int> num2(a2, a2 + sizeof(a2) / sizeof(a2[0]));
+  int ret1 = ThreeSumClosest(num1, 0);
+  int ret2 = ThreeSumClosest(num2, 1);
+  EXPECT_EQ(ret1, 0);
+  EXPECT_EQ(ret2, 2);
+}
