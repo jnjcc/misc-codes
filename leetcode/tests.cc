@@ -122,3 +122,9 @@ TEST(FourSum, vector) {
   // (-2,  0, 0, 2)
   EXPECT_EQ(ret.size(), 3);
 }
+
+TEST(LetterCombinations, string) {
+  string digits = "23";
+  vector<string> ret = LetterCombinations(digits);
+  EXPECT_EQ(ret.size(), 9);
+}

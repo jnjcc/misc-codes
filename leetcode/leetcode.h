@@ -48,4 +48,6 @@ int ThreeSumClosest(vector<int> &sum, int target);
 
 vector<vector<int> > FourSum(vector<int> &sum, int target);
 
+vector<string> LetterCombinations(const string &digits);
+
 #endif  // LEETCODE_H_
