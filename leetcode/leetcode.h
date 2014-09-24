@@ -5,6 +5,7 @@
 #include <math.h>
 
 #include <algorithm>
+#include <stack>
 #include <string>
 #include <vector>
 #include <map>
@@ -51,5 +52,7 @@ vector<vector<int> > FourSum(vector<int> &sum, int target);
 vector<string> LetterCombinations(const string &digits);
 
 ListNode *RemoveNthFromEnd(ListNode *head, int n);
+
+bool IsValidParens(const string &s);
 
 #endif  // LEETCODE_H_

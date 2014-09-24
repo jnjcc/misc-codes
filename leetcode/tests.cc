@@ -139,3 +139,8 @@ TEST(RemoveNthFromEnd, list) {
   EXPECT_EQ(ret->next->next->val, 3);
   EXPECT_EQ(ret->next->next->next->val, 5);
 }
+
+TEST(IsValidParens, string) {
+  EXPECT_EQ(IsValidParens("()[]{}"), true);
+  EXPECT_EQ(IsValidParens("([)]"), false);
+}
