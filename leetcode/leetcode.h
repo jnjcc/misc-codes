@@ -46,4 +46,6 @@ vector<vector<int> > ThreeSum(vector<int> &num);
 
 int ThreeSumClosest(vector<int> &sum, int target);
 
+vector<vector<int> > FourSum(vector<int> &sum, int target);
+
 #endif  // LEETCODE_H_

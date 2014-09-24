@@ -112,3 +112,13 @@ TEST(ThreeSumClosest, vector) {
   EXPECT_EQ(ret1, 0);
   EXPECT_EQ(ret2, 2);
 }
+
+TEST(FourSum, vector) {
+  int array[] = {1, 0, -1, 0, -2, 2};
+  vector<int> num(array, array + sizeof(array) / sizeof(array[0]));
+  vector<vector<int> > ret = FourSum(num, 0);
+  // (-1,  0, 0, 1)
+  // (-2, -1, 1, 2)
+  // (-2,  0, 0, 2)
+  EXPECT_EQ(ret.size(), 3);
+}
