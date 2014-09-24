@@ -50,4 +50,6 @@ vector<vector<int> > FourSum(vector<int> &sum, int target);
 
 vector<string> LetterCombinations(const string &digits);
 
+ListNode *RemoveNthFromEnd(ListNode *head, int n);
+
 #endif  // LEETCODE_H_
