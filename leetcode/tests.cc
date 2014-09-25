@@ -150,3 +150,12 @@ TEST(GenerateParenthesis, int) {
   // "((()))", "(()())", "(())()", "()(())", "()()()"
   EXPECT_EQ(ret.size(), 5);
 }
+
+TEST(SwapPairs, list) {
+  ListNode *l1 = new ListNode(1), *l2 = new ListNode(2), *l3 = new ListNode(3);
+  l1->next = l2; l2->next = l3;
+  ListNode *ret = SwapPairs(l1);
+  EXPECT_EQ(ret->val, 2);
+  EXPECT_EQ(ret->next->val, 1);
+  EXPECT_EQ(ret->next->next->val, 3);
+}

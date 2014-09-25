@@ -58,4 +58,6 @@ bool IsValidParens(const string &s);
 
 vector<string> GenerateParenthesis(int n);
 
+ListNode *SwapPairs(ListNode *head);
+
 #endif  // LEETCODE_H_
