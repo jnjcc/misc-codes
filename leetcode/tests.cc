@@ -144,3 +144,9 @@ TEST(IsValidParens, string) {
   EXPECT_EQ(IsValidParens("()[]{}"), true);
   EXPECT_EQ(IsValidParens("([)]"), false);
 }
+
+TEST(GenerateParenthesis, int) {
+  vector<string> ret = GenerateParenthesis(3);
+  // "((()))", "(()())", "(())()", "()(())", "()()()"
+  EXPECT_EQ(ret.size(), 5);
+}

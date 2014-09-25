@@ -55,4 +55,6 @@ ListNode *RemoveNthFromEnd(ListNode *head, int n);
 
 bool IsValidParens(const string &s);
 
+vector<string> GenerateParenthesis(int n);
+
 #endif  // LEETCODE_H_
