@@ -171,3 +171,8 @@ TEST(ReverseKGroup, list) {
   EXPECT_EQ(ret->next->next->next->val, 4);
   EXPECT_EQ(ret->next->next->next->next->val, 5);
 }
+
+TEST(RemoveDuplicates, array) {
+  int a[] = {1, 1, 2};
+  EXPECT_EQ(RemoveDuplicates(a, 3), 2);
+}
