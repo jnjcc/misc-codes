@@ -159,3 +159,15 @@ TEST(SwapPairs, list) {
   EXPECT_EQ(ret->next->val, 1);
   EXPECT_EQ(ret->next->next->val, 3);
 }
+
+TEST(ReverseKGroup, list) {
+  ListNode *l1 = new ListNode(1), *l2 = new ListNode(2), *l3 = new ListNode(3),
+           *l4 = new ListNode(4), *l5 = new ListNode(5);
+  l1->next = l2; l2->next = l3; l3->next = l4; l4->next = l5;
+  ListNode *ret = ReverseKGroup(l1, 3);
+  EXPECT_EQ(ret->val, 3);
+  EXPECT_EQ(ret->next->val, 2);
+  EXPECT_EQ(ret->next->next->val, 1);
+  EXPECT_EQ(ret->next->next->next->val, 4);
+  EXPECT_EQ(ret->next->next->next->next->val, 5);
+}

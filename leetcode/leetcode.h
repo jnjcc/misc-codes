@@ -60,4 +60,6 @@ vector<string> GenerateParenthesis(int n);
 
 ListNode *SwapPairs(ListNode *head);
 
+ListNode *ReverseKGroup(ListNode *head, int k);
+
 #endif  // LEETCODE_H_
