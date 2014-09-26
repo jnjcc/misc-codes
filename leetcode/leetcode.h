@@ -67,4 +67,6 @@ int RemoveDuplicates(int A[], int n);
 
 char *StrStr(const char *haystack, const char *needle);
 
+int Divide(int dividend, int divisor);
+
 #endif  // LEETCODE_H_

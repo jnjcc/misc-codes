@@ -183,3 +183,7 @@ TEST(StrStr, char) {
   EXPECT_EQ(*p1, 'c');
   EXPECT_EQ(strlen(p2), 0);
 }
+
+TEST(StrStr, int) {
+  EXPECT_EQ(Divide(2147483647, 2), 1073741823);
+}
