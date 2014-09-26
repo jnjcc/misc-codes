@@ -2,6 +2,7 @@
 #define LEETCODE_H_
 
 #include <stdio.h>
+#include <string.h>
 #include <math.h>
 
 #include <algorithm>
@@ -63,5 +64,7 @@ ListNode *SwapPairs(ListNode *head);
 ListNode *ReverseKGroup(ListNode *head, int k);
 
 int RemoveDuplicates(int A[], int n);
+
+char *StrStr(const char *haystack, const char *needle);
 
 #endif  // LEETCODE_H_

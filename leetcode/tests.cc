@@ -176,3 +176,10 @@ TEST(RemoveDuplicates, array) {
   int a[] = {1, 1, 2};
   EXPECT_EQ(RemoveDuplicates(a, 3), 2);
 }
+
+TEST(StrStr, char) {
+  char *p1 = StrStr("abcdef", "cde");
+  char *p2 = StrStr("", "");
+  EXPECT_EQ(*p1, 'c');
+  EXPECT_EQ(strlen(p2), 0);
+}
