@@ -184,6 +184,15 @@ TEST(StrStr, char) {
   EXPECT_EQ(strlen(p2), 0);
 }
 
-TEST(StrStr, int) {
+TEST(Divide, int) {
   EXPECT_EQ(Divide(2147483647, 2), 1073741823);
+}
+
+TEST(FindSubstring, str) {
+  string s = "barfoothefoobarman";
+  string la[] = {"foo", "bar"};
+  vector<string> va(la, la+2);
+  vector<int> ret = FindSubstring(s, va);
+  // [0, 9]
+  EXPECT_EQ(ret.size(), 2);
 }

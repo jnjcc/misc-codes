@@ -69,4 +69,6 @@ char *StrStr(const char *haystack, const char *needle);
 
 int Divide(int dividend, int divisor);
 
+vector<int> FindSubstring(const string &, const vector<string> &);
+
 #endif  // LEETCODE_H_
