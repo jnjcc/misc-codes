@@ -71,4 +71,7 @@ int Divide(int dividend, int divisor);
 
 vector<int> FindSubstring(const string &, const vector<string> &);
 
+void NextPermutation(vector<int> &num);
+void NextPermutationNOTICE(vector<int> &num);
+
 #endif  // LEETCODE_H_

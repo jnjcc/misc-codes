@@ -196,3 +196,15 @@ TEST(FindSubstring, str) {
   // [0, 9]
   EXPECT_EQ(ret.size(), 2);
 }
+
+TEST(NextPermutation, vector) {
+  int a[] = {2, 3, 1, 3, 3};
+  vector<int> va(a, a + 5);
+  vector<int> va2(a, a + 5);
+  NextPermutation(va);
+  NextPermutationNOTICE(va2);
+  EXPECT_EQ(va[3], 1);
+  EXPECT_EQ(va2[3], 1);
+  EXPECT_EQ(va[4], 3);
+  EXPECT_EQ(va2[4], 3);
+}
