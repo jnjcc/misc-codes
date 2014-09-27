@@ -74,4 +74,6 @@ vector<int> FindSubstring(const string &, const vector<string> &);
 void NextPermutation(vector<int> &num);
 void NextPermutationNOTICE(vector<int> &num);
 
+int LongestValidParentheses(const string &s);
+
 #endif  // LEETCODE_H_

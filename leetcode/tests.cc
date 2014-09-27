@@ -208,3 +208,8 @@ TEST(NextPermutation, vector) {
   EXPECT_EQ(va[4], 3);
   EXPECT_EQ(va2[4], 3);
 }
+
+TEST(LongestValidParentheses, str) {
+  EXPECT_EQ(LongestValidParentheses(")()())"), 4);
+  EXPECT_EQ(LongestValidParentheses("()(()"), 2);
+}
