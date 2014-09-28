@@ -76,4 +76,6 @@ void NextPermutationNOTICE(vector<int> &num);
 
 int LongestValidParentheses(const string &s);
 
+int SearchRotated(int A[], int n, int target);
+
 #endif  // LEETCODE_H_

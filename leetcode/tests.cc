@@ -213,3 +213,8 @@ TEST(LongestValidParentheses, str) {
   EXPECT_EQ(LongestValidParentheses(")()())"), 4);
   EXPECT_EQ(LongestValidParentheses("()(()"), 2);
 }
+
+TEST(SearchRotated, int) {
+  int a[] = {4, 5, 6, 7, 0, 1, 2};
+  EXPECT_EQ(SearchRotated(a, 7, 6), 2);
+}
