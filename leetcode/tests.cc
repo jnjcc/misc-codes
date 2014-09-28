@@ -235,3 +235,11 @@ TEST(SearchRange, int) {
   EXPECT_EQ(ret[0], 0);
   EXPECT_EQ(ret[1], 1);
 }
+
+TEST(SearchInsert, int) {
+  int a[] = {1, 3, 5, 6};
+  EXPECT_EQ(SearchInsert(a, 4, 5), 2);
+  EXPECT_EQ(SearchInsert(a, 4, 2), 1);
+  EXPECT_EQ(SearchInsert(a, 4, 7), 4);
+  EXPECT_EQ(SearchInsert(a, 4, 0), 0);
+}

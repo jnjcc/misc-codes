@@ -80,4 +80,6 @@ int SearchRotated(int A[], int n, int target);
 
 vector<int> SearchRange(int A[], int n, int target);
 
+int SearchInsert(int A[], int n, int target);
+
 #endif  // LEETCODE_H_
