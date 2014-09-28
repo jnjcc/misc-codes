@@ -218,3 +218,20 @@ TEST(SearchRotated, int) {
   int a[] = {4, 5, 6, 7, 0, 1, 2};
   EXPECT_EQ(SearchRotated(a, 7, 6), 2);
 }
+
+TEST(SearchRange, int) {
+  int a[] = {5, 7, 7, 8, 8, 10};
+  int b[] = {2, 2};
+  vector<int> ret;
+  ret = SearchRange(a, 6, 8);
+  EXPECT_EQ(ret[0], 3);
+  EXPECT_EQ(ret[1], 4);
+
+  ret = SearchRange(a, 6, 11);
+  EXPECT_EQ(ret[0], -1);
+  EXPECT_EQ(ret[1], -1);
+
+  ret = SearchRange(b, 2, 2);
+  EXPECT_EQ(ret[0], 0);
+  EXPECT_EQ(ret[1], 1);
+}
