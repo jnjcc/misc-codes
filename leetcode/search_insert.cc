@@ -18,7 +18,7 @@ int SearchInsert(int A[], int n, int target) {
     }
   }
 
-  // by now, A[l] == A[r] (thus A[l] == A[m]) && A[l] != target
+  // by now, l == r (thus A[l] == A[m]) && A[l] != target
   if (A[l] < target) {
     return (l + 1);
   } else {
