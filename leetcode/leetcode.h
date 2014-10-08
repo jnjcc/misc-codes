@@ -86,4 +86,6 @@ string CountAndSay(int n);
 
 vector<vector<int> > CombinationSum(vector<int> &candidates, int target);
 
+vector<vector<int> > CombinationSum2(vector<int> &num, int target);
+
 #endif  // LEETCODE_H_

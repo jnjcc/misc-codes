@@ -256,3 +256,10 @@ TEST(CombinationSum, int) {
   EXPECT_EQ(ret[0][2], 3);
   EXPECT_EQ(ret[1][0], 7);
 }
+
+TEST(CombinationSum2, int) {
+  int a[] = {10, 1, 2, 7, 6, 1, 5};
+  vector<int> cands(a, a + sizeof(a) / sizeof(a[0]));
+  vector<vector<int> > ret = CombinationSum2(cands, 8);
+  EXPECT_EQ(ret.size(), 4);
+}
