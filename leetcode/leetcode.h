@@ -82,4 +82,6 @@ vector<int> SearchRange(int A[], int n, int target);
 
 int SearchInsert(int A[], int n, int target);
 
+string CountAndSay(int n);
+
 #endif  // LEETCODE_H_

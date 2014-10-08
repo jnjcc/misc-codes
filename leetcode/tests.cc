@@ -243,3 +243,7 @@ TEST(SearchInsert, int) {
   EXPECT_EQ(SearchInsert(a, 4, 7), 4);
   EXPECT_EQ(SearchInsert(a, 4, 0), 0);
 }
+
+TEST(CountAndSay, int) {
+  EXPECT_EQ(CountAndSay(5), "111221");
+}
