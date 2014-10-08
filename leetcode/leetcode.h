@@ -84,4 +84,6 @@ int SearchInsert(int A[], int n, int target);
 
 string CountAndSay(int n);
 
+vector<vector<int> > CombinationSum(vector<int> &candidates, int target);
+
 #endif  // LEETCODE_H_

@@ -247,3 +247,12 @@ TEST(SearchInsert, int) {
 TEST(CountAndSay, int) {
   EXPECT_EQ(CountAndSay(5), "111221");
 }
+
+TEST(CombinationSum, int) {
+  int a[] = {2, 3, 6, 7};
+  vector<int> cands(a, a + sizeof(a) / sizeof(a[0]));
+  vector<vector<int> > ret = CombinationSum(cands, 7);
+  EXPECT_EQ(ret.size(), 2);
+  EXPECT_EQ(ret[0][2], 3);
+  EXPECT_EQ(ret[1][0], 7);
+}
