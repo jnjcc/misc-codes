@@ -88,4 +88,6 @@ vector<vector<int> > CombinationSum(vector<int> &candidates, int target);
 
 vector<vector<int> > CombinationSum2(vector<int> &num, int target);
 
+int FirstMissingPositive(int A[], int n);
+
 #endif  // LEETCODE_H_

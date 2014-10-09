@@ -263,3 +263,8 @@ TEST(CombinationSum2, int) {
   vector<vector<int> > ret = CombinationSum2(cands, 8);
   EXPECT_EQ(ret.size(), 4);
 }
+
+TEST(FirstMissingPositive, array) {
+  int A[] = {3, 4, -1, 1};
+  EXPECT_EQ(FirstMissingPositive(A, 4), 2);
+}
