@@ -268,3 +268,8 @@ TEST(FirstMissingPositive, array) {
   int A[] = {3, 4, -1, 1};
   EXPECT_EQ(FirstMissingPositive(A, 4), 2);
 }
+
+TEST(Trap, array) {
+  int A[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+  EXPECT_EQ(Trap(A, sizeof(A) / sizeof(A[0])), 6);
+}

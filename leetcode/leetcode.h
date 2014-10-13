@@ -90,4 +90,6 @@ vector<vector<int> > CombinationSum2(vector<int> &num, int target);
 
 int FirstMissingPositive(int A[], int n);
 
+int Trap(int A[], int n);
+
 #endif  // LEETCODE_H_
