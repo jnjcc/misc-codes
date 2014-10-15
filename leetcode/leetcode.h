@@ -92,4 +92,6 @@ int FirstMissingPositive(int A[], int n);
 
 int Trap(int A[], int n);
 
+string Multiply(string num1, string num2);
+
 #endif  // LEETCODE_H_

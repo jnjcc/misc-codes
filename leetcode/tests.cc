@@ -273,3 +273,8 @@ TEST(Trap, array) {
   int A[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
   EXPECT_EQ(Trap(A, sizeof(A) / sizeof(A[0])), 6);
 }
+
+TEST(Multiply, string) {
+  string lhs = "234", rhs = "678";
+  EXPECT_EQ(Multiply(lhs, rhs), "158652");
+}
