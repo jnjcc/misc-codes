@@ -94,4 +94,6 @@ int Trap(int A[], int n);
 
 string Multiply(string num1, string num2);
 
+bool WildcardMatch(const char *s, const char *p);
+
 #endif  // LEETCODE_H_

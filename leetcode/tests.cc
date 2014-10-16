@@ -278,3 +278,14 @@ TEST(Multiply, string) {
   string lhs = "234", rhs = "678";
   EXPECT_EQ(Multiply(lhs, rhs), "158652");
 }
+
+TEST(WildcardMatch, char) {
+  EXPECT_EQ(WildcardMatch("aa", "a"), false);
+  EXPECT_EQ(WildcardMatch("aa", "aa"), true);
+  EXPECT_EQ(WildcardMatch("aaa", "aa"), false);
+  EXPECT_EQ(WildcardMatch("aa", "*"), true);
+  EXPECT_EQ(WildcardMatch("aa", "a*"), true);
+  EXPECT_EQ(WildcardMatch("aa", "?*"), true);
+  // NOTICE: how about this one
+  EXPECT_EQ(WildcardMatch("aab", "c*a*b"), false);
+}
