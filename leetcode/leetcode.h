@@ -98,4 +98,6 @@ bool WildcardMatch(const char *s, const char *p);
 
 int LengthOfLastWord(const char *s);
 
+double Pow(double x, int n);
+
 #endif  // LEETCODE_H_

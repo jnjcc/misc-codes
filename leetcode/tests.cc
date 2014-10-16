@@ -293,3 +293,8 @@ TEST(WildcardMatch, char) {
 TEST(LengthOfLastWord, char) {
   EXPECT_EQ(LengthOfLastWord("Hello World"), 5);
 }
+
+TEST(Pow, double) {
+  // for NOTICE 2)
+  EXPECT_EQ(Pow(0.00001, 2147483647), 0.0);
+}
