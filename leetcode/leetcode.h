@@ -96,4 +96,6 @@ string Multiply(string num1, string num2);
 
 bool WildcardMatch(const char *s, const char *p);
 
+int LengthOfLastWord(const char *s);
+
 #endif  // LEETCODE_H_

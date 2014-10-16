@@ -289,3 +289,7 @@ TEST(WildcardMatch, char) {
   // NOTICE: how about this one
   EXPECT_EQ(WildcardMatch("aab", "c*a*b"), false);
 }
+
+TEST(LengthOfLastWord, char) {
+  EXPECT_EQ(LengthOfLastWord("Hello World"), 5);
+}
