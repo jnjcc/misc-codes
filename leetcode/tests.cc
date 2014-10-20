@@ -303,3 +303,10 @@ TEST(MaxSubArray, array) {
   int A[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
   EXPECT_EQ(MaxSubArray(A, sizeof(A) / sizeof(A[0])), 6);
 }
+
+TEST(Permute, vector) {
+  int A[] = {1, 2, 3};
+  vector<int> num(A, A + 3);
+  vector<vector<int> > ret = Permute(num);
+  EXPECT_EQ(ret.size(), 6);
+}
