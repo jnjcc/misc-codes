@@ -298,3 +298,8 @@ TEST(Pow, double) {
   // for NOTICE 2)
   EXPECT_EQ(Pow(0.00001, 2147483647), 0.0);
 }
+
+TEST(MaxSubArray, array) {
+  int A[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+  EXPECT_EQ(MaxSubArray(A, sizeof(A) / sizeof(A[0])), 6);
+}
