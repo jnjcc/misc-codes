@@ -105,4 +105,6 @@ int MaxSubArray(int A[], int n);
 vector<vector<int> > Permute(vector<int> &num);
 vector<vector<int> > PermuteUnique(vector<int> &num);
 
+vector<string> Anagrams(vector<string> &strs);
+
 #endif  // LEETCODE_H_
