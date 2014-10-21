@@ -310,3 +310,13 @@ TEST(Permute, vector) {
   vector<vector<int> > ret = Permute(num);
   EXPECT_EQ(ret.size(), 6);
 }
+
+TEST(PermuteUnique, vector) {
+  int A[] = {1, 1, 2};
+  vector<int> num(A, A + 3);
+  vector<vector<int> > ret = PermuteUnique(num);
+  // {1, 1, 2}
+  // {1, 2, 1}
+  // {2, 1, 1}
+  EXPECT_EQ(ret.size(), 3);
+}

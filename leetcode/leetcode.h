@@ -103,5 +103,6 @@ double Pow(double x, int n);
 int MaxSubArray(int A[], int n);
 
 vector<vector<int> > Permute(vector<int> &num);
+vector<vector<int> > PermuteUnique(vector<int> &num);
 
 #endif  // LEETCODE_H_
