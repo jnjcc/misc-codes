@@ -320,3 +320,16 @@ TEST(PermuteUnique, vector) {
   // {2, 1, 1}
   EXPECT_EQ(ret.size(), 3);
 }
+
+TEST(SpiralOrder, vector) {
+  int a[] = {1, 2, 3};
+  int b[] = {4, 5, 6};
+  int c[] = {7, 8, 9};
+  vector<int> va(a, a + 3), vb(b, b + 3), vc(c, c + 3);
+  vector<vector<int> > matrix;
+  matrix.push_back(va);
+  matrix.push_back(vb);
+  matrix.push_back(vc);
+  vector<int> ret = SpiralOrder(matrix);
+  EXPECT_EQ(ret[8], 5);
+}
