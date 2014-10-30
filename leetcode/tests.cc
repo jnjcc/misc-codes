@@ -338,3 +338,10 @@ TEST(GenerateMatrix, vector) {
   vector<vector<int> > ret = GenerateMatrix(3);
   EXPECT_EQ(ret[1][1], 9);
 }
+
+TEST(CanJump, array) {
+  int A[] = {2, 3, 1, 1, 4};
+  int B[] = {3, 2, 1, 0, 4};
+  EXPECT_EQ(CanJump(A, 5), true);
+  EXPECT_EQ(CanJump(B, 5), false);
+}
