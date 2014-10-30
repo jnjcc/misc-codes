@@ -333,3 +333,8 @@ TEST(SpiralOrder, vector) {
   vector<int> ret = SpiralOrder(matrix);
   EXPECT_EQ(ret[8], 5);
 }
+
+TEST(GenerateMatrix, vector) {
+  vector<vector<int> > ret = GenerateMatrix(3);
+  EXPECT_EQ(ret[1][1], 9);
+}

@@ -108,5 +108,6 @@ vector<vector<int> > PermuteUnique(vector<int> &num);
 vector<string> Anagrams(vector<string> &strs);
 
 vector<int> SpiralOrder(vector<vector<int> > &matrix);
+vector<vector<int> > GenerateMatrix(int n);
 
 #endif  // LEETCODE_H_
