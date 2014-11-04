@@ -345,3 +345,8 @@ TEST(CanJump, array) {
   EXPECT_EQ(CanJump(A, 5), true);
   EXPECT_EQ(CanJump(B, 5), false);
 }
+
+TEST(MinJumps, array) {
+  int A[] = {2, 3, 1, 1, 4};
+  EXPECT_EQ(MinJumps(A, 5), 2);
+}

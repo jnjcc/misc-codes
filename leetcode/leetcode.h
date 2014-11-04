@@ -111,5 +111,6 @@ vector<int> SpiralOrder(vector<vector<int> > &matrix);
 vector<vector<int> > GenerateMatrix(int n);
 
 bool CanJump(int A[], int n);
+int MinJumps(int A[], int n);
 
 #endif  // LEETCODE_H_
