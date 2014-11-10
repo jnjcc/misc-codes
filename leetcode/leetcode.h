@@ -113,4 +113,6 @@ vector<vector<int> > GenerateMatrix(int n);
 bool CanJump(int A[], int n);
 int MinJumps(int A[], int n);
 
+vector<vector<string> > SolveNQueens(int n);
+
 #endif  // LEETCODE_H_

@@ -350,3 +350,11 @@ TEST(MinJumps, array) {
   int A[] = {2, 3, 1, 1, 4};
   EXPECT_EQ(MinJumps(A, 5), 2);
 }
+
+TEST(SolveNQueens, int) {
+  vector<vector<string> > ret = SolveNQueens(4);
+  EXPECT_EQ(ret.size(), 2);
+  EXPECT_EQ(ret[0].size(), 4);
+  // ".Q.."
+  EXPECT_EQ(ret[0][0][1], 'Q');
+}
