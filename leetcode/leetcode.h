@@ -116,4 +116,6 @@ int MinJumps(int A[], int n);
 vector<vector<string> > SolveNQueens(int n);
 int TotalNQueens(int n);
 
+void Rotate(vector<vector<int> > &matrix);
+
 #endif  // LEETCODE_H_

@@ -362,3 +362,15 @@ TEST(SolveNQueens, int) {
 TEST(TotalNQueens, int) {
   EXPECT_EQ(TotalNQueens(4), 2);
 }
+
+TEST(Rotate, vector) {
+  int a[] = {1, 2};
+  int b[] = {3, 4};
+  vector<int> va(a, a + 2);
+  vector<int> vb(b, b + 2);
+  vector<vector<int> > mat;
+  mat.push_back(va);
+  mat.push_back(vb);
+  Rotate(mat);
+  EXPECT_EQ(mat[1][1], 2);
+}
