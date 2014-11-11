@@ -374,3 +374,17 @@ TEST(Rotate, vector) {
   Rotate(mat);
   EXPECT_EQ(mat[1][1], 2);
 }
+
+TEST(Merge, Interval) {
+  Interval v1(1, 3), v2(2, 6), v3(8, 10), v4(15, 18);
+  vector<Interval> input;
+  input.push_back(v1);
+  input.push_back(v2);
+  input.push_back(v3);
+  input.push_back(v4);
+
+  vector<Interval> ret = Merge(input);
+  EXPECT_EQ(ret.size(), 3);
+  EXPECT_EQ(ret[0].start, 1);
+  EXPECT_EQ(ret[0].end, 6);
+}

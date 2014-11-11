@@ -118,4 +118,12 @@ int TotalNQueens(int n);
 
 void Rotate(vector<vector<int> > &matrix);
 
+struct Interval {
+  int start;
+  int end;
+  Interval(): start(0), end(0) {}
+  Interval(int s, int e): start(s), end(e) {}
+};
+vector<Interval> Merge(vector<Interval> &intervals);
+
 #endif  // LEETCODE_H_
