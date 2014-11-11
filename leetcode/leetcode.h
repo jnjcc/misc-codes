@@ -114,5 +114,6 @@ bool CanJump(int A[], int n);
 int MinJumps(int A[], int n);
 
 vector<vector<string> > SolveNQueens(int n);
+int TotalNQueens(int n);
 
 #endif  // LEETCODE_H_

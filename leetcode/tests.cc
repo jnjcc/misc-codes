@@ -358,3 +358,7 @@ TEST(SolveNQueens, int) {
   // ".Q.."
   EXPECT_EQ(ret[0][0][1], 'Q');
 }
+
+TEST(TotalNQueens, int) {
+  EXPECT_EQ(TotalNQueens(4), 2);
+}
