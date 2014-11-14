@@ -404,3 +404,12 @@ TEST(InsertIntval, Interval) {
   EXPECT_EQ(ret[1].start, 3);
   EXPECT_EQ(ret[1].end, 10);
 }
+
+TEST(GetPermutation, int) {
+  string expected[7] = {
+    "", "123", "132", "213", "231", "312", "321"
+  };
+  for (int i = 0; i < 7; ++i) {
+    EXPECT_EQ(GetPermutation(3, i), expected[i]);
+  }
+}

@@ -127,4 +127,6 @@ struct Interval {
 vector<Interval> Merge(vector<Interval> &intervals);
 vector<Interval> InsertIntval(vector<Interval> &intervals, Interval newInterval);
 
+string GetPermutation(int n, int k);
+
 #endif  // LEETCODE_H_
