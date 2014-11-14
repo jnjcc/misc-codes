@@ -388,3 +388,19 @@ TEST(Merge, Interval) {
   EXPECT_EQ(ret[0].start, 1);
   EXPECT_EQ(ret[0].end, 6);
 }
+
+TEST(InsertIntval, Interval) {
+  Interval v1(1, 2), v2(3, 5), v3(6, 7), v4(8, 10), v5(12, 16);
+  vector<Interval> intvals;
+  intvals.push_back(v1);
+  intvals.push_back(v2);
+  intvals.push_back(v3);
+  intvals.push_back(v4);
+  intvals.push_back(v5);
+
+  Interval new_intv(4, 9);
+  vector<Interval> ret = InsertIntval(intvals, new_intv);
+  EXPECT_EQ(ret.size(), 3);
+  EXPECT_EQ(ret[1].start, 3);
+  EXPECT_EQ(ret[1].end, 10);
+}

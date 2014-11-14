@@ -125,5 +125,6 @@ struct Interval {
   Interval(int s, int e): start(s), end(e) {}
 };
 vector<Interval> Merge(vector<Interval> &intervals);
+vector<Interval> InsertIntval(vector<Interval> &intervals, Interval newInterval);
 
 #endif  // LEETCODE_H_
