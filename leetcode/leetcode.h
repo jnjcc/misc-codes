@@ -129,4 +129,6 @@ vector<Interval> InsertIntval(vector<Interval> &intervals, Interval newInterval)
 
 string GetPermutation(int n, int k);
 
+ListNode *RotateRight(ListNode *head, int k);
+
 #endif  // LEETCODE_H_

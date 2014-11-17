@@ -413,3 +413,13 @@ TEST(GetPermutation, int) {
     EXPECT_EQ(GetPermutation(3, i), expected[i]);
   }
 }
+
+TEST(RotateRight, List) {
+  ListNode *l1 = new ListNode(1), *l2 = new ListNode(2), *l3 = new ListNode(3),
+           *l4 = new ListNode(4), *l5 = new ListNode(5);
+  l1->next = l2; l2->next = l3; l3->next = l4; l4->next = l5;
+  l1 = RotateRight(l1, 2);
+  // 4 -> 5 -> 1 -> 2 -> 3 -> NULL
+  EXPECT_EQ(l1->val, 4);
+  EXPECT_EQ(l1->next->val, 5);
+}
