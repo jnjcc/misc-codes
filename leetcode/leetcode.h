@@ -131,4 +131,6 @@ string GetPermutation(int n, int k);
 
 ListNode *RotateRight(ListNode *head, int k);
 
+ListNode *MergeTwoLists(ListNode *l1, ListNode *l2);
+
 #endif  // LEETCODE_H_
