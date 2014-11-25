@@ -134,5 +134,6 @@ ListNode *RotateRight(ListNode *head, int k);
 ListNode *MergeTwoLists(ListNode *l1, ListNode *l2);
 
 int UniquePaths(int m, int n);
+int UniquePathsWithObstacles(vector<vector<int> > &obst);
 
 #endif  // LEETCODE_H_

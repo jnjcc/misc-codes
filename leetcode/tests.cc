@@ -423,3 +423,24 @@ TEST(RotateRight, List) {
   EXPECT_EQ(l1->val, 4);
   EXPECT_EQ(l1->next->val, 5);
 }
+
+TEST(UniquePathsWithObstacles, vector) {
+  int a[] = {0, 0, 0};
+  int b[] = {0, 1, 0};
+  int c[] = {0, 0, 0};
+  vector<int> va(a, a + 3), vb(b, b + 3), vc(c, c + 3);
+  vector<vector<int> > obst;
+  obst.push_back(va);
+  obst.push_back(vb);
+  obst.push_back(vc);
+
+  int ret = UniquePathsWithObstacles(obst);
+  EXPECT_EQ(ret, 2);
+
+  vector<int> vd(a, a + 2), ve(b, b + 2);
+  obst.clear();
+  obst.push_back(vd);
+  obst.push_back(ve);
+  ret = UniquePathsWithObstacles(obst);
+  EXPECT_EQ(ret, 0);
+}
