@@ -133,4 +133,6 @@ ListNode *RotateRight(ListNode *head, int k);
 
 ListNode *MergeTwoLists(ListNode *l1, ListNode *l2);
 
+int UniquePaths(int m, int n);
+
 #endif  // LEETCODE_H_
