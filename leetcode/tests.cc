@@ -444,3 +444,14 @@ TEST(UniquePathsWithObstacles, vector) {
   ret = UniquePathsWithObstacles(obst);
   EXPECT_EQ(ret, 0);
 }
+
+TEST(MinPathSum, vector) {
+  int a[] = {1, 2};
+  int b[] = {1, 1};
+  vector<int> va(a, a + 2), vb(b, b + 2);
+  vector<vector<int> > grid;
+  grid.push_back(va); grid.push_back(vb);
+
+  int ret = MinPathSum(grid);
+  EXPECT_EQ(ret, 3);
+}
