@@ -137,4 +137,6 @@ int UniquePaths(int m, int n);
 int UniquePathsWithObstacles(vector<vector<int> > &obst);
 int MinPathSum(vector<vector<int> > &grid);
 
+string AddBinary(string a, string b);
+
 #endif  // LEETCODE_H_

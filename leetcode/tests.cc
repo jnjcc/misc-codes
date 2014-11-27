@@ -455,3 +455,9 @@ TEST(MinPathSum, vector) {
   int ret = MinPathSum(grid);
   EXPECT_EQ(ret, 3);
 }
+
+TEST(AddBinary, string) {
+  string a = "11";
+  string b = "1";
+  EXPECT_EQ(AddBinary(a, b), "100");
+}
