@@ -139,4 +139,6 @@ int MinPathSum(vector<vector<int> > &grid);
 
 string AddBinary(string a, string b);
 
+vector<int> PlusOne(vector<int> &digits);
+
 #endif  // LEETCODE_H_

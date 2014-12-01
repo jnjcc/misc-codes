@@ -461,3 +461,11 @@ TEST(AddBinary, string) {
   string b = "1";
   EXPECT_EQ(AddBinary(a, b), "100");
 }
+
+TEST(PlusOne, vector) {
+  vector<int> digits;
+  digits.push_back(9);
+  vector<int> ret = PlusOne(digits);
+  EXPECT_EQ(ret[0], 1);
+  EXPECT_EQ(ret[1], 0);
+}
