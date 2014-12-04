@@ -141,4 +141,22 @@ string AddBinary(string a, string b);
 
 vector<int> PlusOne(vector<int> &digits);
 
+class MinStack {
+ public:
+  MinStack(): elems_(stack<int>()), mins_(stack<int>()) {}
+  void Push(int x);
+  void Pop();
+  int Top();
+  int GetMin();
+
+ private:
+  stack<int> elems_;
+  stack<int> mins_;
+
+ private:
+  // No copying allowed
+  MinStack(const MinStack &);
+  void operator=(const MinStack &);
+};
+
 #endif  // LEETCODE_H_

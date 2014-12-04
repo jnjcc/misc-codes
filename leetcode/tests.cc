@@ -469,3 +469,16 @@ TEST(PlusOne, vector) {
   EXPECT_EQ(ret[0], 1);
   EXPECT_EQ(ret[1], 0);
 }
+
+TEST(MinStack, class) {
+  MinStack mstack;
+  mstack.Push(1);
+  mstack.Push(0);
+  mstack.Push(5);
+  EXPECT_EQ(mstack.GetMin(), 0);
+  EXPECT_EQ(mstack.Top(), 5);
+  mstack.Pop();
+  mstack.Pop();
+  EXPECT_EQ(mstack.GetMin(), 1);
+  EXPECT_EQ(mstack.Top(), 1);
+}
