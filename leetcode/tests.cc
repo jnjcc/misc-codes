@@ -482,3 +482,9 @@ TEST(MinStack, class) {
   EXPECT_EQ(mstack.GetMin(), 1);
   EXPECT_EQ(mstack.Top(), 1);
 }
+
+TEST(IsPalindromeString, string) {
+  EXPECT_EQ(IsPalindromeString("A man, a plan, a canal: Panama"), true);
+  EXPECT_EQ(IsPalindromeString(""), true);
+  EXPECT_EQ(IsPalindromeString("Aa"), true);
+}

@@ -159,4 +159,6 @@ class MinStack {
   void operator=(const MinStack &);
 };
 
+bool IsPalindromeString(const string &s);
+
 #endif  // LEETCODE_H_
