@@ -488,3 +488,7 @@ TEST(IsPalindromeString, string) {
   EXPECT_EQ(IsPalindromeString(""), true);
   EXPECT_EQ(IsPalindromeString("Aa"), true);
 }
+
+TEST(IsSameTree, TreeNode) {
+  EXPECT_EQ(IsSameTree(NULL, NULL), true);
+}

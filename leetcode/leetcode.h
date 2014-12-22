@@ -161,4 +161,12 @@ class MinStack {
 
 bool IsPalindromeString(const string &s);
 
+struct TreeNode {
+  int val;
+  TreeNode *left;
+  TreeNode *right;
+  TreeNode(int x): val(x), left(NULL), right(NULL) {}
+};
+bool IsSameTree(TreeNode *p, TreeNode *q);
+
 #endif  // LEETCODE_H_
