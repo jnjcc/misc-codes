@@ -169,4 +169,6 @@ struct TreeNode {
 };
 bool IsSameTree(TreeNode *p, TreeNode *q);
 
+int Sqrtx(int x);
+
 #endif  // LEETCODE_H_

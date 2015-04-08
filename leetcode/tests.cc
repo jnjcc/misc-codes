@@ -492,3 +492,7 @@ TEST(IsPalindromeString, string) {
 TEST(IsSameTree, TreeNode) {
   EXPECT_EQ(IsSameTree(NULL, NULL), true);
 }
+
+TEST(Sqrtx, int) {
+  EXPECT_EQ(Sqrtx(100), 10);
+}
